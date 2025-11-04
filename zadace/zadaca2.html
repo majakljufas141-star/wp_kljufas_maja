@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gradivo za zadacu 2 iz kolegija Web programiranja">
+    <meta name="author" content="Maja Kljufas">
+    <title>Zadaca 2</title>
+</head>
+<body>
+    <h1>The office</h1>
+    <table border="1">
+        <tr>
+            <tr>
+                <th colspan="10">The office</th>
+            </tr>
+            <th>Sezone</th>
+            <td>Prva sezona</td>
+            <td>Druga sezona</td>
+            <td>Treća sezona</td>
+            <td>Četvrta sezona</td>
+            <td>Peta sezona</td>
+            <td>Šesta sezona</td>
+            <td>Sedma sezona</td>
+            <td>Osma sezona</td>
+            <td>Deveta sezona</td>
+        </tr>
+        <tr>
+            <th>Broj epizoda</th>
+            <td>6 epizoda</td>
+            <td>22 epizode</td>
+            <td>23 epizode</td>
+            <td>14 epizoda</td>
+            <td>28 epizoda</td>
+            <td>26 epizoda</td>
+            <td>20 epizoda</td>
+            <td>24 epizode</td>
+            <td>23 epizode</td>
+        </tr>
+        <tr>
+            <th>Godina izlaska</th>
+            <td>2005</td>
+            <td>2006</td>
+            <td>2006</td>
+            <td>2008</td>
+            <td>2008</td>
+            <td>2009</td>
+            <td>2010</td>
+            <td>2012</td>
+            <td>2013</td>
+        </tr>
+        <tr>
+            <th>Redatelj</th>
+            <td colspan="9">Greg Daniels</td>
+            
+        </tr>
+        <tr>
+            <th rowspan="2">Ocjena, glavni glumac</th>
+            <td>8</td>
+            <td>7</td>
+            <td>8</td>
+            <td>8</td>
+            <td>7</td>
+            <td>8</td>
+            <td>8</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            
+            <td>Jim Halpert</td>
+            <td>Michael Scott</td>
+            <td>Dwight Schrute</td>
+            <td>Michael Scott</td>
+            <td>Michael Scott</td>
+            <td>Dwight Schrute</td>
+            <td>Jim Halpert</td>
+            <td>Dwight Schrute</td>
+            <td>Michael Scott</td>
+        </tr>
+    </table>
+    <h2>Obrazac</h2>
+    <form action="#" method="get">
+        <label for="ime">Unesi ime:</label>
+        <input type="text" id="ime" placeholder="Unesi ime...">
+        <br>
+        <label for="prezime">Unesi prezime:</label>
+        <input type="text" id="prezime" placeholder="Unesi prezime...">
+        <br>
+        <label for="pass">Unesi lozinku:</label>
+        <input type="password" name="pass" id="pass" placeholder="Unesi lozinku...">
+        <br>
+        Odaberi ulogu:
+        <input type="radio" name="uloga" id="Admin">
+            <label for="admin">Admin</label>
+            <input type="radio" name="uloga" id="guest">
+            <label for="guest">Guest</label>
+            <br>
+            <input type="checkbox" name="Prihvačanje uvjeta">
+            <label for="Prihvačanje uvjeta">Prihvati uvjete</label>
+            <br>
+            <input type="submit" value="Pošalji">
+        <input type="reset" value="Poništi">
+        <br>
+        <h2>Audio element</h2>
+        <audio controls>
+         <source src="../zadace/test-audio.ogg" type="audio/ogg">
+         Your browser does not support the audio tag.
+    </audio>
+    <h2>Video element</h2>
+    <video width="320" height="240" controls poster>
+      <source src="../zadace/puppy.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+      
+    
+</body>
+</html>
