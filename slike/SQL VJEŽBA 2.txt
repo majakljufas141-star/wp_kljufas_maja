@@ -1,0 +1,60 @@
+Kreiranje tablice:
+CREATE TABLE DnevnikProdaje20256
+(
+Id INT AUTO_INCREMENT PRIMARY KEY,
+NazivProizvoda VARCHAR(120) NOT NULL,
+RokTrajanja DATE NOT NULL,
+JedinicaMjere VARCHAR(3) NOT NULL,
+Kolicina INT DEFAULT 1,
+Cijena DECIMAL(10, 2),
+OpisProizvoda VARCHAR(200) NULL
+);
+----------------------------------------------------------
+INSERT INTO DnevnikProdaje20256 (NazivProizvoda, RokTrajanja, JedinicaMjere, Kolicina, Cijena)
+VALUES
+('Kruh', '2025-10-25', 'kg', 5, 2.50),
+('Burek', '2025-10-25', 'kom', 10, 7.45),
+('Jogurt', '2025-10-28', 'l', 2, 1.20);
+----------------------------------------------------------------
+INSERT INTO DnevnikProdaje20256 (NazivProizvoda, RokTrajanja, JedinicaMjere, Cijena, OpisProizvoda)
+VALUES
+('Fit kiflica', '2025-10-24', 'kom', 0.50, 'Kiflica za sportase'),
+('Francuski klipic', '2025-10-31', 'kom', 0.75, 'Okusi Francuske');
+-------------------------------------------------------------------
+SELECT * FROM DnevnikProdaje20256;
+------------------------------------------------------
+Pregled definicije kreirane tablice:
+DESCRIBE DnevnikProdaje20256;
+----------------------------------------------------------
+SELECT * FROM DnevnikProdaje20256,
+WHERE id = 4;
+------------------------------------------
+Uvjetna projekcija s WHERE naredbom nad tablicom
+SELECT Kolicina FROM DnevnikProdaje20256
+WHERE id = 4;
+-------------------------------------------------------
+Ispravljanje podataka (Uvijek koristiti s WHERE naredbom):
+UPDATE DnevnikProdaje20256 SET Kolicina = 5
+WHERE id = 4;
+-----------------------------------------------------------
+Ispravljanje podataka u više atributa istovremeno:
+UPDATE DnevnikProdaje20256 
+SET JedinicaMjere = 'kom',
+Kolicina = 20,
+Cijena = 11.20
+WHERE Id = 3; 
+--------------------------------------------------------
+Uvjetno brisanje:
+Uvijek prvo SELECT:
+SELECT * FROM DnevnikProdaje20256
+WHERE id= 5;
+Pa onda DELETE:
+DELETE FROM DnevnikProdaje20256
+WHERE id= 5;
+-------------------------------------------------
+Uvjetna projekcija ( =, !=, >, >=, <, <=):
+SELECT * FROM DnevnikProdaje20256
+WHERE Cijena > 5;
+SELECT * FROM DnevnikProdaje20256
+WHERE JedinicaMjere <> 'kom';
+---------------------------------------
