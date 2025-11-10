@@ -6,5 +6,12 @@ h2 {
 body {
     background-color: cadetblue;
     }
-    
+    /*pristup preko ID-a*/
+    #prvi {
+        color: blue;
+    }
+   /*pristup preko klase*/
+    .drugi {
+        color: brown;
+    }
     
