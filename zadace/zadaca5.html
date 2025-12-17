@@ -9,6 +9,8 @@
     <style>
         .body {
             background-color: burlywood;
+            padding: 0;
+            margin: 0;
         }
         .recepti{
             background-color: cadetblue;
@@ -30,15 +32,14 @@
         .tjestenina {
             background-color: white;
             padding: 10px;
-            margin-bottom: 20px;
-            width: 50%;          
+            width: 150%;          
             border: 2px solid black;
             padding: 10px;
-            margin: 20px auto; 
-            grid-column: 1 / 3;
-    background-color: white;
-    border: 2px solid black;
-    padding: 10px;
+            margin: 10px auto; 
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
             }
             
         .tjestenina img {
@@ -49,12 +50,14 @@
         .palacinke {
                 background-color: white;
                 padding: 10px;
-                margin-bottom: 20px;
-                width: 50%;          
+                width: 100%;          
                 border: 2px solid black;
                 padding: 10px;
-                margin: 20px auto;
+                margin: 0px auto;
                 display: grid;
+                grid-column-start: 1;
+                grid-column-end: 6;
+                
                 
             
             }
@@ -73,11 +76,15 @@
         .pica {
                 background-color: white;
                 padding: 10px;
-                margin-bottom: 20px;
                 width: 50%;          
                 border: 2px solid black;
                 padding: 10px;
-                margin: 20px auto; 
+                margin: 10px auto; 
+                grid-column-start: 5;
+                grid-column-end: 6;
+                grid-row-start: 2;
+                grid-row-end: 3;
+
                 
             }
             
@@ -85,13 +92,16 @@
                 width: 100%;
                 max-width: 300px;
             }
-
-        
-
+        .recept-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2cm;       
+        padding: 2cm;    
+        margin: 0 auto;}
+    
 @media (max-width: 480px) {
-    .recept2 {
+    .recept-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
     }
 }
 
@@ -107,7 +117,7 @@
     <span>DORUČAK, RUČAK I VEČERA</span> 
     
 </div>
-
+<div class="recept-grid">
 <div class="palacinke">
          <h2>Palačinke</h2>
         <p>Osnovni recept za doručak.</p>
@@ -181,8 +191,7 @@ Peći kratko, minutu, dvije, pa je preokrenuti na drugu stranu i ispeći da poru
             Prvo stavite sok od paradajza, pa origano, salama i na kraju rendani sir. I po želji mozete dodati gljive.  <br> 
             Picu stavite u zagrijanu rernu da se peče oko 10 minuta na 250 stupnjeva. Kad je tjesto dobilo žučkastu boju gotovo je.  <br>
             </p>
-        
-    
+        </div>
 </div>
 
 
