@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. kolokvij</title>
+</head>
+<style>
+    .zastava_belgije {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        
+    }
+
+     .crvena {
+        background-color: red;
+         height: 200px;
+         width: 75px;
+         position: absolute;
+         left: 150px;
+     }
+    
+    .zuta {
+        background-color: yellow;
+        height: 200px;
+        width: 100px;
+        position: absolute;
+        left: 75px;
+    }
+    
+    .crna {
+        background-color: black;
+        height: 200px;
+        width: 75px;
+        position: absolute;
+        left: 0px;
+        
+       
+    }
+
+   
+
+    .grid1 {
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 100px);
+        gap: 10px;
+        margin-bottom: 30px;
+        
+    }
+
+    .grid {
+        background-color: blueviolet;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+    }
+
+    .box {
+            border: 1px solid black;
+            padding: 15px;
+            margin: 10px;
+            background-color: aquamarine;
+        }
+
+    .p1 {
+           color: blue;
+            font-family: Arial, sans-serif;
+            margin: 15px;
+            padding: 10px;
+
+    }
+
+    .p2{
+            
+        color: blue;
+        font-family: Arial, sans-serif;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .p3 {
+            
+        color: blue;
+        font-family: Arial, sans-serif;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    #p4 {
+        color: red;
+        font-weight: bold;
+        margin: 20px;
+    }
+
+    #p5 {
+        color: red;
+        font-weight: bold;
+        margin: 20px;
+    }
+
+
+</style>
+<body>
+    <h1>Zastava belgije</h1>
+    <div class="zastava_belgije">
+        <div class="crna"></div>
+        <div class="zuta"></div>
+        <div class="crvena"></div>
+
+    </div>
+
+    <h2>2. CSS Grid 4x4</h2>
+    <div class="grid1">
+        <div class="grid">1</div>
+        <div class="grid">2</div>
+        <div class="grid">3</div>
+        <div class="grid">4</div>
+        <div class="grid">5</div>
+        <div class="grid">6</div>
+        <div class="grid">7</div>
+        <div class="grid">8</div>
+        <div class="grid">9</div>
+        <div class="grid">10</div>
+        <div class="grid">11</div>
+        <div class="grid">12</div>
+        <div class="grid">13</div>
+        <div class="grid">14</div>
+        <div class="grid">15</div>
+        <div class="grid">16</div>
+    </div>
+
+    <h2>Box model</h2>
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+
+    <h2>Klase i ID</h2>
+    <p class="p1">Ponedjeljak</p>
+    <p class="p2">Utorak</p>
+    <p class="p3">Srijeda</p>
+    <p id="p4">Četvrtak</p>
+    <p id="p5">Petak</p>
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
